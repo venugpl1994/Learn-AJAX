@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Javascript ajax Intro</title>
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		<script>
+			function loadcontact()
+			{
+								var xhttp;
+				  if (window.XMLHttpRequest) {
+					// code for modern browsers
+					xhttp = new XMLHttpRequest();
+					} else {
+					// code for IE6, IE5
+					xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+				  }
+				  xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+					  document.getElementById("result").innerHTML = this.responseText;
+					}
+				  };
+				  xhttp.open("GET", "contact.html", true);
+				  xhttp.send();
+			}
+		
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+			<div class="col-sm-4">
+				<ul class="list-group">
+					<li class="list-group-item"><a href="#" onclick="loadcontact()">contact</a></li>
+				
+				
+				</ul>
+			</div>
+			<div class="col-sm-8"><div id="result"></div>
+			
+			</div>
+				
+			
+			
+			
+			</div>
+		
+		</div>
+	
+	
+	</body>
+</html>

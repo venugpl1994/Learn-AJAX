@@ -1,0 +1,157 @@
+<html>
+
+	<head>
+		<title> Contact Info 1</title>
+		<link rel="stylesheet" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.css">
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/bootstrap.js"></script>
+		<script src="assets/js/ajax.js"></script>
+		<style>
+			#img
+			{
+				
+				width:190px;
+				border:40px 40px 40px 40px;
+				margin:2%;
+			}
+			.st
+			{
+				margin:2%;
+				border:5px 5px solid red;
+				float: left;
+				background:white;
+				padding:5px;
+			}
+			.st a
+			{
+			color:red;
+			
+			}
+			#st1
+			{
+				
+				font-size:15px;
+				font-weight:bold;
+				
+			}
+			#add
+			{
+				font-size:15px;
+				font-weight:bold;
+				padding:10px;
+			}	
+			
+			
+		</style>
+	</head>
+	<body onload="one()">
+	<br>
+		<div class="container">
+			<div class="row well">
+				<div class="col-sm-3" id="img">
+					<img src="8.jpg" class="img-responsive img-thumbnail">
+				</div>	
+			<br>				
+				<div class="col-sm-6">
+					<div class="st">
+						<a href=""><i class="glyphicon glyphicon-star-empty"></i></a>
+					</div>
+					<div class="st">			
+						<a href=""><i class="glyphicon glyphicon-star-empty"></i></a>	
+					</div>					
+					<div class="st">
+						<a href="#"><i class="glyphicon glyphicon-star-empty"></i></a>
+					</div>
+					<div class="st">
+						<a href="#"><i class="glyphicon glyphicon-star-empty"></i></a>
+					</div>						
+					<div class="st">
+						<a href="#"><i class="glyphicon glyphicon-star-empty"></i></a>
+					</div>
+				
+					<br><br>
+					<div>
+						<h4>1 Vote 100% Positive Feedback</h4>
+					</div>
+				</div>
+				<div class="col-sm-3">			
+						<h4>CONTACT INFORMATION</h4>
+						<p id="add">Address: Marathahalli <br><br>
+						Pincode:560037<br><br>
+						Phone No:878887878 </p>
+				</div>
+												
+			</div>	
+	
+	
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="panel panel-info">
+<ul class="list-group">
+
+	<li class="list-group-item active">Profile Setting </li>
+	
+	<li class="list-group-item">
+	<a href="#" onclick="lead()"><font color="black"><i class="fa fa-group"></i> Leads</font></a></li>
+	
+	
+	<li class="list-group-item">
+	<a href="#" onclick="profile()"><font color="black"><i class="fa fa-eye"></i> Profile</font></a></li>
+	
+	
+	<li class="list-group-item"><a href="#" data-toggle="modal" data-target="#myport" onclick="getcontact()"><font color="black"><i class="fa fa-map-marker"></i> Contact Details</font></a></li>
+	
+	
+	<li class="list-group-item"><a href=""><font color="black"><i class="fa fa-suitcase"></i> Business Category</font></a></li>
+	<li class="list-group-item"><a href="#" data-toggle="modal" data-target="#myport" onclick="getdata()"><font color="black"><i class="glyphicon glyphicon-envelope"></i> My Protfoilo</font></a></li>
+	<li class="list-group-item"><a href="#" onclick="photo()">
+	<font color="black"><i class="fa fa-picture-o"></i> Manage Photo</font></a></li>
+	<li class="list-group-item"><a href=""><font color="black"><i class="fa fa-film"></i> Manage Video</font></a></li>
+	<li class="list-group-item"><a href=""><font color="black"><i class="glyphicon glyphicon-pencil"></i> Change Password</font></a></li>
+</ul>
+</div>
+</div>
+
+<div class="col-sm-9">
+<ul class="nav navbar-nav">
+	<li>
+	<a href="#" onclick="one()">My Inbox <i class="fa fa-envelope"></i></a>
+	</li>
+	
+	<li><a href=" "> Sent Item <i class="fa fa-arrow-right"></i></a></li>
+	<li><a href=" "> Spam <i class="fa fa-send"></i></a></li>
+	<li><a href=" "> Trash <i class="fa fa-trash"></i></a></li>
+</ul>
+					
+							<div class="row">
+							   <div class="col-sm-12" id="mydata">
+									No Records
+							   </div>
+							</div>
+							
+							
+				</div>	<!--col-9end-->
+					
+		
+			</div>
+		</div><!--container end-->
+		
+	</body>
+</html>
+<!-- Modal -->
+<div class="modal fade" id="myport" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center" id="myModalLabel">My protfolio</h4>
+      </div>
+      <div class="modal-body text-center row" id="mydata2">
+        <h5 class="text-center">please wait Loading...</h5>
+		<i class="fa fa-spinner fa-spin fa-5px "></i>
+      </div>
+     
+    </div>
+  </div>
+</div>
